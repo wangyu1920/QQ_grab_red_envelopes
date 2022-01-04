@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_200"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+基于无障碍监听QQ消息，模拟手势，实现抢红包功能
+\n只能监听通知栏和下图这样的消息，
+根据消息中是否有“QQ红包”关键字决定是否跳转到红包界面，
+\n所以你要确保这个app在后台运行，QQ可以弹出通知
+\n跳转之后会震动一秒来提示你。
+\n重启应用，无障碍权限可能会丢失，需要重新授权
+\n可能与其他无障碍应用冲突
+\n不推荐自动开红包（自动开会被QQ检测封号）
+自动开红包就是自动点一下红包" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自动开红包" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img"/>
+
+
+
+</LinearLayout>
